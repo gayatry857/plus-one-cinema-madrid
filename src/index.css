@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  background: #EFE8DA;
+  color: #2B0A12;
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+button { font-family: inherit; }
+
+@keyframes enter { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+@keyframes pulseRing { 0% { transform: scale(0.6); opacity: 0.8; } 100% { transform: scale(1.8); opacity: 0; } }
+@keyframes scan { 0% { top: 6%; } 50% { top: 90%; } 100% { top: 6%; } }
+@keyframes pop { 0% { transform: scale(0.5); opacity: 0; } 70% { transform: scale(1.1); } 100% { transform: scale(1); opacity: 1; } }
+@keyframes drawer { from { transform: translateX(100%); } to { transform: none; } }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.screen-enter { animation: enter 0.38s ease both; }
+.pulse-ring { animation: pulseRing 2s ease-out infinite; }
+.scan-line { animation: scan 1.4s ease-in-out infinite; }
+.pop { animation: pop 0.45s ease both; }
+.drawer { animation: drawer 0.25s ease both; }
+.spin { animation: spin 0.9s linear infinite; }
+
+/* Two-handle range slider */
+.dual-range { position: relative; height: 36px; }
+.dual-range input[type='range'] {
+  position: absolute; left: 0; width: 100%; top: 8px; height: 20px; margin: 0;
+  background: transparent; pointer-events: none; -webkit-appearance: none; appearance: none;
+}
+.dual-range input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none; pointer-events: auto;
+  width: 26px; height: 26px; border-radius: 50%; background: #6E1A31;
+  border: 3px solid #F8CD4B; box-shadow: 0 0 0 2px #6E1A31; cursor: grab;
+}
+.dual-range input[type='range']::-moz-range-thumb {
+  pointer-events: auto; width: 20px; height: 20px; border-radius: 50%; background: #6E1A31;
+  border: 3px solid #F8CD4B; box-shadow: 0 0 0 2px #6E1A31; cursor: grab;
+}
+.dual-range input[type='range']::-webkit-slider-runnable-track { background: transparent; }
+.dual-range input[type='range']::-moz-range-track { background: transparent; }
+
+::-webkit-scrollbar { width: 0; height: 0; }
