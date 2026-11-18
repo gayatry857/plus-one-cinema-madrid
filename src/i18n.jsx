@@ -59,6 +59,7 @@ const S = {
   'profile.save': ['Save preferences', 'Guardar preferencias'],
 
   'ver.title': ['Verify your identity', 'Verifica tu identidad'],
+  'ver.demo': ['Demo only: this is a prototype. No real ID or photo is read, stored or sent. Tap the buttons to simulate each step.', 'Solo demo: es un prototipo. No se lee, guarda ni envía ningún documento ni foto reales. Pulsa los botones para simular cada paso.'],
   'ver.sub': ['Everyone on Plus One Cinema is checked with an ID and a selfie, so you know who you are meeting.', 'Todos en Plus One Cinema pasan una comprobación con documento y selfie, para que sepas a quién conoces.'],
   'ver.step1': ['Step 1: photo of your ID', 'Paso 1: foto de tu documento'],
   'ver.place': ['Place your ID inside the frame', 'Coloca tu documento dentro del marco'],

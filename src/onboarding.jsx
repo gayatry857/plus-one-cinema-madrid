@@ -343,6 +343,7 @@ export function Verify({ c }) {
     <div>
       {dots}
       <Title sub={t('ver.sub')}>{t('ver.title')}</Title>
+      <p className="mb-4 rounded-2xl border border-yellow bg-yellow/30 px-4 py-3 text-sm font-semibold text-night">{t('ver.demo')}</p>
       <h2 className="mb-3 font-bold text-night">{t('ver.step1')}</h2>
       <div className="mb-5 flex flex-wrap gap-2">{DOCS.map((d) => <Chip key={d} active={doc === d} onClick={() => setDoc(d)}>{t('doc.' + d)}</Chip>)}</div>
       <div className="relative mx-auto mb-6 flex h-52 w-full items-center justify-center overflow-hidden rounded-3xl border-2 border-dashed border-maroon/50 bg-white">
@@ -364,6 +365,7 @@ export function Verify({ c }) {
     <div>
       {dots}
       <Title sub={t('ver.step2sub')}>{t('ver.step2')}</Title>
+      <p className="mb-4 rounded-2xl border border-yellow bg-yellow/30 px-4 py-3 text-sm font-semibold text-night">{t('ver.demo')}</p>
       <div className="relative mx-auto mb-6 flex h-60 w-60 items-center justify-center overflow-hidden rounded-full border-4 border-maroon/60 bg-white">
         {scan}
         {selfieDone ? (
