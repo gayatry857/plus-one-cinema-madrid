@@ -2,9 +2,9 @@
 
 A social cinema app concept for Madrid: find the right person, the right film and the right bar, so nobody has to watch alone.
 
-![Plus One Cinema welcome screen](docs/screenshot.png)
+**Try it now: https://plusonecinema6866.z1.web.core.windows.net/** (no sign-up, works best on a phone)
 
-**Live demo:** https://plusonecinema6866.z1.web.core.windows.net/ (works best on a phone)
+![Plus One Cinema welcome screen](docs/screenshot.png)
 
 ## The idea
 
